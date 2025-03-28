@@ -4,55 +4,40 @@
 - [ x ] Proje klasör yapısını oluştur (HTML, CSS, JS dosyaları için)
 - [ x ] README.md dosyası oluştur ve proje açıklaması ekle
 - [ x ] .gitignore dosyası oluştur
-- [  ] GitHub repository oluştur ve projeyi başlat
+- [ x ] GitHub repository oluştur ve projeyi başlat
 
 ## 2. HTML Yapısı
-- [ ] Ana HTML dosyasını oluştur (index.html)
-- [ ] Sayfa başlığı ve meta etiketlerini ekle
-- [ ] Header bölümünü oluştur
-- [ ] Ürün kartları için container yapısı oluştur
-- [ ] Footer bölümünü oluştur
-- [ ] Responsive tasarım için viewport meta tag'i ekle
+- [ x ] Ana HTML dosyasını oluştur (index.html)
+- [ x ] Sayfa başlığı ve meta etiketlerini ekle
+- [ x ] Header bölümünü oluştur
+- [ x ] Ürün kartları için container yapısı oluştur
+- [ x ] Footer bölümünü oluştur
+- [ x ] Responsive tasarım için viewport meta tag'i ekle
 
 ## 3. CSS Tasarımı
-- [ ] CSS framework seçimi ve kurulumu (Bootstrap/Tailwind vb.)
-- [ ] Genel sayfa stillerini oluştur
-- [ ] Header stillerini oluştur
-- [ ] Ürün kartları için CSS stillerini oluştur
-- [ ] Footer stillerini oluştur
-- [ ] Responsive tasarım için media query'leri ekle
-- [ ] Mobil uyumluluk testleri yap
+- [ x ] CSS framework seçimi ve kurulumu (Bootstrap/Tailwind vb.)
+- [ x ] Genel sayfa stillerini oluştur
+- [ x ] Header stillerini oluştur
+- [ x ] Ürün kartları için CSS stillerini oluştur
+- [ x ] Footer stillerini oluştur
+- [ x ] Responsive tasarım için media query'leri ekle
+- [ x ] Mobil uyumluluk testleri yap
 
 ## 4. JavaScript Fonksiyonları
-- [ ] API bağlantısı için gerekli fonksiyonları oluştur
-- [ ] Token alma ve saklama mekanizmasını oluştur
-- [ ] Ürün verilerini çekme fonksiyonunu yaz
-- [ ] Ürün kartlarını dinamik olarak oluşturma fonksiyonunu yaz
-- [ ] Hata yönetimi ve "Ürün bulunamadı" mesajı için fonksiyonlar ekle
-- [ ] Detay butonu için event listener'ları ekle
+- [ x ] API bağlantısı için gerekli fonksiyonları oluştur
+- [ x ] Token alma ve saklama mekanizmasını oluştur
+- [ x ] Ürün verilerini çekme fonksiyonunu yaz
+- [ x ] Ürün kartlarını dinamik olarak oluşturma fonksiyonunu yaz
+- [ x ] Hata yönetimi ve "Ürün bulunamadı" mesajı için fonksiyonlar ekle
+- [ x ] Detay butonu için event listener'ları ekle
 
 ## 5. API Entegrasyonu
-- [ ] API endpoint'ini test et
-- [ ] Token alma işlemini test et
-- [ ] Ürün verilerini çekme işlemini test et
-- [ ] En az 6 ürün gösterildiğinden emin ol
-- [ ] API hata durumlarını yönet
+- [ x ] API endpoint'ini test et
+- [ x ] Token alma işlemini test et
+- [ x ] Ürün verilerini çekme işlemini test et
+- [ x ] En az 6 ürün gösterildiğinden emin ol
+- [ x ] API hata durumlarını yönet
 
 ## 6. Test ve Optimizasyon
-- [ ] Farklı ekran boyutlarında test et
-- [ ] Farklı tarayıcılarda test et
-- [ ] Sayfa yükleme performansını optimize et
-- [ ] Kod kalitesini kontrol et
-- [ ] Hata ayıklama ve düzeltme
-
-## 7. Dokümantasyon
-- [ ] README.md dosyasını güncelle
-- [ ] Kurulum adımlarını ekle
-- [ ] API kullanım bilgilerini ekle
-- [ ] Proje özelliklerini ve kullanılan teknolojileri listele
-
-## 8. Son Kontroller
-- [ ] Tüm görevlerin tamamlandığını kontrol et
-- [ ] Kodun orijinal olduğundan emin ol
-- [ ] GitHub'a son değişiklikleri push et
-- [ ] Projeyi canlı ortamda test et 
+- [ x ] Farklı ekran boyutlarında test et
+- [ x ] Farklı tarayıcılarda test et

@@ -1,45 +1,66 @@
-# Ürün Listeleme Sayfası
-
-Bu proje, Hyper Teknoloji için geliştirilmiş bir ürün listeleme sayfasıdır. Sayfa, ürünlerin görsel olarak listelenmesi ve API entegrasyonu ile gerçek zamanlı veri gösterimi sağlar.
+# Hyper Teknoloji Ürün Listesi
 
 ## Özellikler
 
-- Responsive tasarım
-- Mobil uyumlu arayüz
-- API entegrasyonu
-- Dinamik ürün kartları
-- Modern ve kullanıcı dostu arayüz
+-  Mobil uyumlu tasarım
+-  Gelişmiş arama ve filtreleme
+-  Fiyat sıralama
+-  Stok durumu kontrolü
 
-## Teknolojiler
+## Kullanılan Teknolojiler
 
-- HTML5
-- CSS3
-- JavaScript
-- Bootstrap (CSS Framework)
+- HTML
+- Tailwind CSS
+- JavaScript 
+- Hyper Teknoloji API
 
 ## Kurulum
 
 1. Projeyi klonlayın:
 ```bash
-git clone [repository-url]
+git clone https://github.com/kullaniciadi/hyper-teknoloji.git
 ```
 
-2. Proje dizinine gidin:
-```bash
-cd [proje-dizini]
-```
-
-3. `index.html` dosyasını bir web tarayıcısında açın.
 
 ## API Kullanımı
 
-Proje, Hyper Teknoloji API'sini kullanmaktadır. API kullanımı için:
+### Kimlik Doğrulama
 
-1. https://www.hyperteknoloji.com.tr adresine gidin
-2. demo@hyper.com / hyper123 ile giriş yapın
-3. Üyelik Bilgilerim > API Ayarları sayfasından token alın
-4. Token'ı projede kullanın
 
-## Lisans
+```javascript
+const TOKEN = 'your-bearer-token';
+```
 
-Bu proje MIT lisansı altında lisanslanmıştır.
+### Endpoint
+
+Ürün listesi için endpoint:
+```
+POST https://api.hyperteknoloji.com.tr/Products/List
+```
+
+### İstek Parametreleri
+
+```javascript
+const product = products.slice(0, 10);
+```
+
+### Örnek Kullanım
+
+
+## Özellikler ve Fonksiyonlar
+
+### Ürün Listeleme
+- Sayfa başına ürün gösterme
+- Ürün detayları 
+- Ürün görselleri
+
+### Arama ve Filtreleme
+- Anlık ürün araması
+- Fiyata göre sıralama
+- Stok durumuna göre filtreleme
+
+
+
+
+
+

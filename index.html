@@ -5,9 +5,283 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hyper Teknoloji</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .float-animation {
+            animation: float 3s ease-in-out infinite;
+        }
+        .glass-effect {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .gradient-text {
+            background: linear-gradient(45deg, #60A5FA, #A78BFA);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+    </style>
 </head>
-<body>
-    
-    <script src="script.js"></script>
+<body class="bg-gradient-to-br from-[#0F172A] via-[#1E293B] to-[#0F172A] min-h-screen">
+    <!-- HEADER -->
+    <header class="glass-effect sticky top-0 z-50 border-b border-gray-800/50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-8">
+                    <a href="#" class="flex items-center gap-2 hover-scale">
+                        <img class="h-12 w-48" src="https://cdnhyper.s3.eu-central-1.amazonaws.com/hyper%20teknoloji%20logo%201_1685708957_1689886515.webp" alt="Hyper Teknoloji">
+                    </a>
+                    <nav class="hidden md:flex items-center gap-8">
+                        <a href="#" class="text-gray-300 hover:text-white transition-all duration-300 hover:scale-105">Siparişlerim</a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-all duration-300 hover:scale-105">Hesabım</a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-all duration-300 hover:scale-105">Yayıncılar</a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-all duration-300 hover:scale-105">İlan Ekle</a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-all duration-300 hover:scale-105">Bakiye Yükle</a>
+                    </nav>
+                </div>
+                <div class="flex items-center gap-6">
+                    <div class="relative">
+                        <input type="text" class="w-72 px-6 py-3 rounded-full bg-gray-800/50 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 border border-gray-700/50 transition-all duration-300" placeholder="Ürün ara...">
+                        <i class="fa-solid fa-magnifying-glass absolute right-6 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <button class="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-3 rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-blue-500/20">Giriş Yap</button>
+                        <a href="#" class="text-gray-300 hover:text-white transition-all duration-300 hover:scale-110">
+                            <i class="fa-solid fa-cart-shopping text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--HEROSECTİON-->
+    <section class="relative py-12 overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-blue-900/50 to-purple-900/50"></div>
+        
+        <!-- Carousel Container -->
+        <div class="carousel-container relative h-[400px] overflow-hidden">
+            <!-- Slide 1 - Valorant -->
+            <div class="carousel-slide absolute inset-0 transition-opacity duration-500">
+                <div class="absolute inset-0 bg-[url('./fotoğraf/Valorant.jpg')] bg-cover bg-center opacity-20"></div>
+                <div class="container mx-auto px-4 relative h-full flex items-center">
+                    <div class="max-w-2xl">
+                        <h1 class="text-4xl md:text-5xl font-bold text-white mb-4 gradient-text">Valorant Points (VP)</h1>
+                        <p class="text-lg text-gray-200 mb-6 leading-relaxed">Valorant, 2020 yılında Riot Games tarafından piyasaya sürülen ve hızla popülerleşen bir FPS oyunudur. Stratejik takım oyunu ve keskin nişancılık becerilerini birleştiren benzersiz bir deneyim sunar.</p>
+                        <div class="flex gap-4">
+                            <a href="#" class="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-3 rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-blue-500/20 flex items-center gap-2 text-sm">
+                                <i class="fas fa-shopping-cart"></i>
+                                VP Satın Al
+                            </a>
+                            <a href="#" class="glass-effect text-white px-6 py-3 rounded-lg hover:bg-gray-800/80 transition-all duration-300 transform hover:scale-105 flex items-center gap-2 text-sm">
+                                <i class="fas fa-info-circle"></i>
+                                Daha Fazla Bilgi
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 - League of Legends -->
+            <div class="carousel-slide absolute inset-0 transition-opacity duration-500">
+                <div class="absolute inset-0 bg-[url('./fotoğraf/lol.webp')] bg-cover bg-center opacity-20  "></div>
+                <div class="container mx-auto px-4 relative h-full flex items-center">
+                    <div class="max-w-2xl">
+                        <h1 class="text-4xl md:text-5xl font-bold text-white mb-4 gradient-text">League of Legends RP</h1>
+                        <p class="text-lg text-gray-200 mb-6 leading-relaxed">League of Legends, dünyanın en popüler MOBA oyunudur. 140'tan fazla şampiyon, stratejik oyun mekanikleri ve rekabetçi bir topluluk ile eşsiz bir deneyim sunar.</p>
+                        <div class="flex gap-4">
+                            <a href="#" class="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-3 rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-blue-500/20 flex items-center gap-2 text-sm">
+                                <i class="fas fa-shopping-cart"></i>
+                                RP Satın Al
+                            </a>
+                            <a href="#" class="glass-effect text-white px-6 py-3 rounded-lg hover:bg-gray-800/80 transition-all duration-300 transform hover:scale-105 flex items-center gap-2 text-sm">
+                                <i class="fas fa-info-circle"></i>
+                                Daha Fazla Bilgi
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 - PUBG Mobile -->
+            <div class="carousel-slide absolute inset-0 transition-opacity duration-500">
+                <div class="absolute inset-0 bg-[url('./fotoğraf/pubg.jpg')] bg-cover bg-center opacity-20"></div>
+                <div class="container mx-auto px-4 relative h-full flex items-center">
+                    <div class="max-w-2xl">
+                        <h1 class="text-4xl md:text-5xl font-bold text-white mb-4 gradient-text">PUBG Mobile UC</h1>
+                        <p class="text-lg text-gray-200 mb-6 leading-relaxed">PUBG Mobile, mobil cihazlarda en çok oynanan battle royale oyunudur. Gerçekçi grafikler, çeşitli silahlar ve heyecan verici oyun deneyimi sunar.</p>
+                        <div class="flex gap-4">
+                            <a href="#" class="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-3 rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-blue-500/20 flex items-center gap-2 text-sm">
+                                <i class="fas fa-shopping-cart"></i>
+                                UC Satın Al
+                            </a>
+                            <a href="#" class="glass-effect text-white px-6 py-3 rounded-lg hover:bg-gray-800/80 transition-all duration-300 transform hover:scale-105 flex items-center gap-2 text-sm">
+                                <i class="fas fa-info-circle"></i>
+                                Daha Fazla Bilgi
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carousel Controls -->
+            <button class="carousel-prev absolute left-2 top-1/2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 transition-all duration-300">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-next absolute right-2 top-1/2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 transition-all duration-300">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+
+            <!-- Carousel Indicators -->
+            <div class="carousel-indicators absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2">
+                <button class="w-2 h-2 rounded-full bg-white/50 hover:bg-white transition-all duration-300"></button>
+                <button class="w-2 h-2 rounded-full bg-white/50 hover:bg-white transition-all duration-300"></button>
+                <button class="w-2 h-2 rounded-full bg-white/50 hover:bg-white transition-all duration-300"></button>
+            </div>
+        </div>
+
+        <div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#0F172A] to-transparent"></div>
+    </section>
+
+    <!--CONTENT -->
+    <main class="container mx-auto px-4 py-12">
+        <!-- Filters -->
+        <div class="glass-effect rounded-2xl p-8 mb-12 shadow-xl">
+            <div class="flex flex-wrap gap-6 items-center justify-between">
+                <div class="flex gap-4">
+                    <a href="#" class="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-3 rounded-xl hover:from-blue-700 hover:to-blue-800 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-blue-500/20">Valorant Points (VP)</a>
+                    <a href="#" class="glass-effect text-white px-8 py-3 rounded-xl hover:bg-gray-800/80 transition-all duration-300 transform hover:scale-105">Valorant EU West</a>
+                </div>
+                <div class="flex gap-6 items-center">
+                    <div class="relative">
+                        <input type="text" placeholder="Ürün ara..." class="bg-gray-800/50 border border-gray-700/50 text-white px-6 py-3 rounded-xl w-72 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300">
+                        <i class="fa-solid fa-magnifying-glass absolute right-6 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                    </div>
+                    <label class="flex items-center text-gray-300 hover:text-white transition-all duration-300 cursor-pointer">
+                        <input type="checkbox" class="mr-3 rounded text-blue-600 focus:ring-blue-500"> Yalnızca Stoktakiler
+                    </label>
+                    <select class="bg-gray-800/50 border border-gray-700/50 text-white px-6 py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300">
+                        <option>Akıllı Sıralama</option>
+                        <option>En Düşük Fiyat</option>
+                        <option>En Yüksek Fiyat</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Products Grid -->
+        <div id="product" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"></div>
+    </main>
+
+    <!--FOOTER-->
+    <footer class="glass-effect text-gray-300 py-16 mt-20">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <!-- Company Info -->
+                <div>
+                    <img class="h-14 mb-6 hover-scale" src="https://cdnhyper.s3.eu-central-1.amazonaws.com/hyper%20teknoloji%20logo%201_1685708957_1689886515.webp" alt="Hyper Teknoloji">
+                    <p class="text-gray-400 leading-relaxed mb-6">Türkiye'nin en güvenilir oyun marketi. Valorant VP, League of Legends RP ve daha fazlası.</p>
+                    <div class="flex gap-6">
+                        <a href="#" class="text-gray-400 hover:text-white transition-all duration-300 hover:scale-110">
+                            <i class="fab fa-instagram text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-all duration-300 hover:scale-110">
+                            <i class="fab fa-youtube text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-all duration-300 hover:scale-110">
+                            <i class="fab fa-discord text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-all duration-300 hover:scale-110">
+                            <i class="fab fa-twitter text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-white font-semibold text-xl mb-6">Hızlı Bağlantılar</h3>
+                    <ul class="space-y-4">
+                        <li><a href="#" class="hover:text-white transition-all duration-300 hover:translate-x-1 flex items-center gap-2">
+                            <i class="fas fa-chevron-right text-sm"></i>
+                            Siparişlerim
+                        </a></li>
+                        <li><a href="#" class="hover:text-white transition-all duration-300 hover:translate-x-1 flex items-center gap-2">
+                            <i class="fas fa-chevron-right text-sm"></i>
+                            Hesabım
+                        </a></li>
+                        <li><a href="#" class="hover:text-white transition-all duration-300 hover:translate-x-1 flex items-center gap-2">
+                            <i class="fas fa-chevron-right text-sm"></i>
+                            Yayıncılar
+                        </a></li>
+                        <li><a href="#" class="hover:text-white transition-all duration-300 hover:translate-x-1 flex items-center gap-2">
+                            <i class="fas fa-chevron-right text-sm"></i>
+                            İlan Ekle
+                        </a></li>
+                    </ul>
+                </div>
+
+                <!-- Categories -->
+                <div>
+                    <h3 class="text-white font-semibold text-xl mb-6">Kategoriler</h3>
+                    <ul class="space-y-4">
+                        <li><a href="#" class="hover:text-white transition-all duration-300 hover:translate-x-1 flex items-center gap-2">
+                            <i class="fas fa-chevron-right text-sm"></i>
+                            Valorant VP
+                        </a></li>
+                        <li><a href="#" class="hover:text-white transition-all duration-300 hover:translate-x-1 flex items-center gap-2">
+                            <i class="fas fa-chevron-right text-sm"></i>
+                            League of Legends RP
+                        </a></li>
+                        <li><a href="#" class="hover:text-white transition-all duration-300 hover:translate-x-1 flex items-center gap-2">
+                            <i class="fas fa-chevron-right text-sm"></i>
+                            PUBG Mobile
+                        </a></li>
+                        <li><a href="#" class="hover:text-white transition-all duration-300 hover:translate-x-1 flex items-center gap-2">
+                            <i class="fas fa-chevron-right text-sm"></i>
+                            Steam Oyunları
+                        </a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h3 class="text-white font-semibold text-xl mb-6">İletişim</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3 hover:text-white transition-all duration-300">
+                            <i class="fas fa-envelope text-blue-500"></i>
+                            <a href="mailto:info@hyperteknoloji.com">info@hyperteknoloji.com</a>
+                        </li>
+                        <li class="flex items-center gap-3 hover:text-white transition-all duration-300">
+                            <i class="fas fa-phone text-blue-500"></i>
+                            <span>+90 555 123 4567</span>
+                        </li>
+                        <li class="flex items-center gap-3 hover:text-white transition-all duration-300">
+                            <i class="fas fa-map-marker-alt text-blue-500"></i>
+                            <span>İstanbul, Türkiye</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="border-t border-gray-800/50 mt-12 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2024 Hyper Teknoloji. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
 </body>
 </html>
