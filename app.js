@@ -279,6 +279,23 @@ function initCarousel() {
     startAutoSlide();
 }
 
+// Mobil Menü Fonksiyonu
+function initMobileMenu() {
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+
+    // Ekran genişliği değiştiğinde menüyü kapat
+    window.addEventListener('resize', () => {
+        if (window.innerWidth >= 768) { // md breakpoint
+            mobileMenu.classList.add('hidden');
+        }
+    });
+}
+
 // Initialize carousel when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     productFetch();
@@ -286,4 +303,5 @@ document.addEventListener('DOMContentLoaded', () => {
     sorting();
     stockFilter();
     initCarousel();
+    initMobileMenu();
 });
